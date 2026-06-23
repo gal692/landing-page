@@ -576,7 +576,7 @@
             color: var(--brand-main);
         }
 
-        /* --- חלונית קוקיז קופצת --- */
+        /* --- חלונית קוקיז קוקיז קופצת --- */
         .cookie-banner {
             position: fixed;
             bottom: 0; left: 0; right: 0;
@@ -653,6 +653,7 @@
             }
             .main-banner-img {
                 border-radius: 0; /* ביטול עיגול הפינות במובייל למראה נקי מקצה לקצה */
+                height: auto; /* שונה ל-auto כדי שהתמונה המותאמת לנייד תוצג בצורה מושלמת ובמלואה */
             }
             .interactive-services-wrapper {
                 display: none;
@@ -706,7 +707,10 @@
 <div class="page-wrapper">
 
     <div class="main-banner-container">
-        <img src="מעטפת משפטית חכמה לעסקים (1).png" alt="גל גוט עורכת דין - מעטפת משפטית חכמה לעסקים" class="main-banner-img">
+        <picture>
+            <source media="(max-width: 768px)" srcset="banner-mobile.png">
+            <img src="מעטפת משפטית חכמה לעסקים (1).png" alt="גל גוט עורכת דין - מעטפת משפטית חכמה לעסקים" class="main-banner-img">
+        </picture>
     </div>
 
     <section id="about">
@@ -721,7 +725,7 @@
                 
                 <div class="vision-headline">החזון שלי</div>
                 <div class="special-highlight">אני מאמינה במעטפת משפטית חכמה לעסק.</div>
-                <p>כלומר – בראש ובראשונה, מיפוי וזיהוי צרכי העסק, ובפרט זיהוי האינטרסים המסחריים של העסק, ומתן מענה משפטי התומך והמקדם את הצרכים האלו. זאת, תוך מטרה, מצד אחד, לסייע לעסק לצמוח, להתקדם ולהרוויח, ולסייע לעסק לנהל את הסיכונים שלו בצורה מושכלת, מודעת וחכמה, ומצד שני – לצמצם את הסיכונים באופן שהעסק יהיה פנוי לצמיחה והתקדמות.</p>
+                <p>כלומר – בראש ובראשונה, מיפוי וזיהוי צרכי העסק, ובפרט זיהוי האינטרסים המסחריים של העסק, ומתן מענה משפטי התומך והמקדם את הצרכים האלו. זאת, תוך מטרה, מצד אחד, לסייע לעסק לצמוח, להתקדם ולהרוויח, ולסייע לעסק לנהל את הסיכונים שלו בצורה מושכלת, ממודעת וחכמה, ומצד שני – לצמצם את הסיכונים באופן שהעסק יהיה פנוי לצמיחה והתקדמות.</p>
             </div>
             <div class="profile-photo-wrapper">
                 <img src="IMG_0863.png" alt="עורכת דין גל גוט">
@@ -749,7 +753,7 @@
                 <button class="service-nav-btn" onclick="showService(3)">ייעוץ בנושא ציות (לרבות הגנת הפרטיות)</button>
                 <button class="service-nav-btn" onclick="showService(4)">סוגיות מול עובדים</button>
                 <button class="service-nav-btn" onclick="showService(5)">פלטפורמות דיגיטליות ואינטרנט</button>
-                <button class="service-nav-btn" onclick="showService(6)">הסכמים מסחריים ועסקאות</button>
+                <button class="service-nav-btn" onclick="showService(6)">ההסכמים מסחריים ועסקאות</button>
                 <button class="service-nav-btn" onclick="showService(7)">דיני חברות וליווי תאגידי שוטף</button>
                 <button class="service-nav-btn" onclick="showService(8)">קניין רוחני ועוולות מסחריות</button>
                 <button class="service-nav-btn" onclick="showService(9)">המשכיות עסקית ומשפחתית</button>
@@ -784,7 +788,7 @@
                 </div>
                 <div class="service-panel" id="service-panel-6">
                     <h3>הסכמים מסחריים ועסקאות</h3>
-                    <p>ליווי הסכמים מסחריים עם גורמים שונים, לרבות לקוחות, עובדים, ספקים, צרכנים, שותפים עסקיים, הסכמי שיתוף פעולה, הסכמי זכיינות, הסכמי הפצה, הסכמי שכירות מסחריים, ליווי במכרזים, ייצוג בעסקאות, לרבות ניהול משא ומתן.</p>
+                    <p>ליווי הסכמים מסחריים עם גורמים שונים, לרבות לקוחות, עובדים, ספקים, צרכנים, שותפים עסקיים, הסכמי שיתוף פעולה, הסכמי זכיינות, הסכמי הפצה, הסכמי שכירות מסחריים, ליווי במכרזים, ייצוג בעסקאות, לרבות ניהול משא ונתן.</p>
                 </div>
                 <div class="service-panel" id="service-panel-7">
                     <h3>דיני חברות וליווי תאגידי שוטף</h3>
@@ -827,7 +831,7 @@
             
             <details class="mobile-service-details">
                 <summary class="mobile-service-summary">ייעוץ בנושא ציות (לרבות הגנת הפרטיות)</summary>
-                <div class="mobile-service-content">בדיקה וייעוץ בנוגע לציות העסק לדרישות החוק והרגולטורים (ובפרט הגנת הפרטיות והגנת הצרכן), התנהלות מול הרגולטורים ומול צרכנים ולקוחות בהיבטי ציות - לרבות מענה לביקורות מטעם רגולטורים וייצוג בתביעות ייצוגיות או בפניות מוקדמות לפני תביעה ייצוגית.</div>
+                <div class="mobile-service-content">בדיקה וייעוץ בנוגע לציות העסק לדרישות החוק והרגולטורים (ובפרט הגנת הפרטיות והגנת הצרכן), התנהלות מול הרגולטורים ומול צרכנים ולקוחות בהיבטי ציות - לרבות מענה לביקורות מטעם רגולטורים וייצוג בתביעות ייצוגיות או בפניות מוקדמות לפני תביעה ייצוגית.</div >
             </details>
             
             <details class="mobile-service-details">
