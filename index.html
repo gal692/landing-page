@@ -79,6 +79,14 @@
             margin-top: 1px;
         }
 
+        .brand-titles .slogan {
+            font-family: 'Assistant', sans-serif;
+            font-size: 0.95rem;
+            color: var(--brand-main);
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
         nav {
             display: flex;
             gap: 15px;
@@ -669,6 +677,7 @@
         <div class="brand-titles">
             <h1><b>גל גוט</b> עורכת דין</h1>
             <div class="english-title"><b>Gal Gott</b> Advocate</div>
+            <div class="slogan">מעטפת משפטית חכמה לעסקים</div>
         </div>
     </div>
 
@@ -701,7 +710,7 @@
                 
                 <p>בעשור האחרון עבדתי במחלקות מסחריות במשרדי עורכי דין מהגדולים בישראל, והענקתי ייעוץ ושירותים משפטיים לחברות מהמובילות במשק, חברות גלובליות וכן לעסקים קטנים, עסקים בינוניים ועסקים בהקמה. צברתי ראיה משפטית-מסחרית היקפית ועמוקה ונגעתי בסוגיות משפטיות מורכבות ורבות. נוסף להכשרתי כעורכת דין, אני בוגרת תואר ראשון בכלכלה מאוניברסיטת חיפה, ומאמינה שעו"ד מסחרי מצוין הוא כזה שמבין עסקים.</p>
                 
-                <p>מעבר לנסיון המשפטי-מסחרי, אני בעלת נסיון מיוחד וממוקד בליווי עסקי B2C הפונים לצרכני קצה, מתן מענה בקשר עם הגנת הפרטיות (לרבות בנוגע לתיקון מס' 13 לחוק הגנת הפרטיות), הגנת הצרכן, הסכמי צרכנים, ציות, ליווי פלטפורמות דיגיטליות ו- E-Commerce.</p>
+                <p>מעבר לנסיוני המשפטי-מסחרי, אני בעלת נסיון מיוחד וממוקד בליווי קמעונאים ועסקי B2C (הפונים לצרכני קצה), במתן מענה בקשר עם הגנת הפרטיות והסדרת נושא הגנת הפרטיות בארגונים (לרבות בנוגע לתיקון מס' 13 לחוק הגנת הפרטיות), הגנת הצרכן, הסכמי צרכנים, ציות, ליווי פלטפורמות דיגיטליות ו- E-Commerce.</p>
                 
                 <div class="vision-headline">החזון שלי</div>
                 <div class="special-highlight">אני מאמינה במעטפת משפטית חכמה לעסק.</div>
@@ -729,16 +738,17 @@
         <div class="interactive-services-wrapper">
             <div class="services-nav">
                 <button class="service-nav-btn active" onclick="showService(0)">ליווי שוטף לעסקים</button>
-                <button class="service-nav-btn" onclick="showService(1)">הקמת עסק</button>
-                <button class="service-nav-btn" onclick="showService(2)">ייעוץ בנושא ציות</button>
-                <button class="service-nav-btn" onclick="showService(3)">סוגיות מול עובדים</button>
-                <button class="service-nav-btn" onclick="showService(4)">פלטפורמות דיגיטליות ואינטרנט</button>
-                <button class="service-nav-btn" onclick="showService(5)">הסכמים מסחריים ועסקאות</button>
-                <button class="service-nav-btn" onclick="showService(6)">דיני חברות וליווי תאגידי שוטף</button>
-                <button class="service-nav-btn" onclick="showService(7)">קניין רוחני ועוולות מסחריות</button>
-                <button class="service-nav-btn" onclick="showService(8)">המשכיות עסקית ומשפחתית</button>
-                <button class="service-nav-btn" onclick="showService(9)">היבטים מסחריים ואזרחיים נוספים</button>
-                <button class="service-nav-btn" onclick="showService(10)">הרצאות והדרכות</button>
+                <button class="service-nav-btn" onclick="showService(1)">ליווי משפטי לקמעונאים</button>
+                <button class="service-nav-btn" onclick="showService(2)">הקמת עסק</button>
+                <button class="service-nav-btn" onclick="showService(3)">ייעוץ בנושא ציות (לרבות הגנת הפרטיות)</button>
+                <button class="service-nav-btn" onclick="showService(4)">סוגיות מול עובדים</button>
+                <button class="service-nav-btn" onclick="showService(5)">פלטפורמות דיגיטליות ואינטרנט</button>
+                <button class="service-nav-btn" onclick="showService(6)">הסכמים מסחריים ועסקאות</button>
+                <button class="service-nav-btn" onclick="showService(7)">דיני חברות וליווי תאגידי שוטף</button>
+                <button class="service-nav-btn" onclick="showService(8)">קניין רוחני ועוולות מסחריות</button>
+                <button class="service-nav-btn" onclick="showService(9)">המשכיות עסקית ומשפחתית</button>
+                <button class="service-nav-btn" onclick="showService(10)">היבטים מסחריים ואזרחיים נוספים</button>
+                <button class="service-nav-btn" onclick="showService(11)">הרצאות והדרכות</button>
             </div>
             
             <div class="service-display-area">
@@ -747,42 +757,46 @@
                     <p>ליווי משפטי שוטף, ייעוץ בנוגע לסוגיות משפטיות הנוגעות לעסק, לרבות הסכמים ושירותי ריטיינר.</p>
                 </div>
                 <div class="service-panel" id="service-panel-1">
+                    <h3>ליווי משפטי לקמעונאים</h3>
+                    <p>ליווי משפטי מקיף לעסקים קמעונאיים, רשתות וחנויות (פיזיות ומקוונות, לרבות אתרי סחר אלקטרוני). ייעוץ שוטף בסוגיות סחר, חוק הגנת הצרכן, ייצוג בתביעות ייצוגיות ובפניות מקדימות לפני תביעות ייצוגיות, הסכמים מול גורמים שונים לרבות ספקים, יצרנים, מפיצים, מפרסמים (לרבות משפיעני רשת) וזכיינים, ומענה לרגולציה צרכנית.</p>
+                </div>
+                <div class="service-panel" id="service-panel-2">
                     <h3>הקמת עסק</h3>
                     <p>ייעוץ בנוגע להקמת העסק, רישום חברות, הסדרת רשיונות, טיפול ברשיון עסק, ייעוץ בנוגע למענה על דרישות רגולטוריות בקשר עם הקמת העסק, הסכמי מייסדים ותקנוני חברה.</p>
                 </div>
-                <div class="service-panel" id="service-panel-2">
-                    <h3>ייעוץ בנושא ציות</h3>
+                <div class="service-panel" id="service-panel-3">
+                    <h3>ייעוץ בנושא ציות (לרבות הגנת הפרטיות)</h3>
                     <p>בדיקה וייעוץ בנוגע לציות העסק לדרישות החוק והרגולטורים (ובפרט הגנת הפרטיות והגנת הצרכן), התנהלות מול הרגולטורים ומול צרכנים ולקוחות בהיבטי ציות - לרבות מענה לביקורות מטעם רגולטורים וייצוג בתביעות ייצוגיות או בפניות מוקדמות לפני תביעה ייצוגית.</p>
                 </div>
-                <div class="service-panel" id="service-panel-3">
+                <div class="service-panel" id="service-panel-4">
                     <h3>סוגיות מול עובדים</h3>
                     <p>ייעוץ שוטף בנוגע להעסקת עובדים, הסכמים מול עובדים ובכירים ושאלות הנוגעות להעסקת עובדים על ידי העסק.</p>
                 </div>
-                <div class="service-panel" id="service-panel-4">
+                <div class="service-panel" id="service-panel-5">
                     <h3>פלטפורמות דיגיטליות ואינטרנט</h3>
                     <p>הסדרה משפטית של פלטפורמות דיגיטליות ואתרי אינטרנט והציות שלהם (ובפרט אתרי E-Commerce), לרבות ניסוח מדיניות פרטיות ותנאי שימוש.</p>
                 </div>
-                <div class="service-panel" id="service-panel-5">
+                <div class="service-panel" id="service-panel-6">
                     <h3>הסכמים מסחריים ועסקאות</h3>
                     <p>ליווי הסכמים מסחריים עם גורמים שונים, לרבות לקוחות, עובדים, ספקים, צרכנים, שותפים עסקיים, הסכמי שיתוף פעולה, הסכמי זכיינות, הסכמי הפצה, הסכמי שכירות מסחריים, ליווי במכרזים, ייצוג בעסקאות, לרבות ניהול משא ומתן.</p>
                 </div>
-                <div class="service-panel" id="service-panel-6">
+                <div class="service-panel" id="service-panel-7">
                     <h3>דיני חברות וליווי תאגידי שוטף</h3>
                     <p>ניסוח ועריכה של כל מסמכי החברה הנדרשים בשוטף: פרוטוקולים, החלטות בעלי מניות, החלטות דירקטוריון, הסדרת זכויות חתימה, דיווחים והתנהלות מול רשם החברות.</p>
                 </div>
-                <div class="service-panel" id="service-panel-7">
+                <div class="service-panel" id="service-panel-8">
                     <h3>קניין רוחני ועוולות מסחריות</h3>
                     <p>ייעוץ בנוגע להגנה על הקניין הרוחני של העסק ובנוגע להתנהלות בעניין עוולות מסחריות.</p>
                 </div>
-                <div class="service-panel" id="service-panel-8">
+                <div class="service-panel" id="service-panel-9">
                     <h3>המשכיות עסקית ומשפחתית</h3>
                     <p>יפוי כח מתמשך, צוואות, ירושות והסכמי ממון – תוך מתן דגש מיוחד על המשכיות עסקית חלקה.</p>
                 </div>
-                <div class="service-panel" id="service-panel-9">
+                <div class="service-panel" id="service-panel-10">
                     <h3>היבטים מסחריים ואזרחיים נוספים</h3>
                     <p>לרבות הליכי ליטיגציה, מכתבי התראה, תביעות ביטוח ומיצוי זכויות רפואיות.</p>
                 </div>
-                <div class="service-panel" id="service-panel-10">
+                <div class="service-panel" id="service-panel-11">
                     <h3>הרצאות והדרכות</h3>
                     <p>הרצאות מותאמות אישית לבעלי עסקים ועובדים בנוגע לסוגיות משפטיות שונות העולות מתוך פעילות העסק.</p>
                 </div>
@@ -797,12 +811,17 @@
             </details>
             
             <details class="mobile-service-details">
+                <summary class="mobile-service-summary">ליווי משפטי לקמעונאים</summary>
+                <div class="mobile-service-content">ליווי משפטי מקיף לעסקים קמעונאיים, רשתות וחנויות (פיזיות ומקוונות, לרבות אתרי סחר אלקטרוני). ייעוץ שוטף בסוגיות סחר, חוק הגנת הצרכן, ייצוג בתביעות ייצוגיות ובפניות מקדימות לפני תביעות ייצוגיות, הסכמים מול גורמים שונים לרבות ספקים, יצרנים, מפיצים, מפרסמים (לרבות משפיעני רשת) וזכיינים, ומענה לרגולציה צרכנית.</div>
+            </details>
+
+            <details class="mobile-service-details">
                 <summary class="mobile-service-summary">הקמת עסק</summary>
                 <div class="mobile-service-content">ייעוץ בנוגע להקמת העסק, רישום חברות, הסדרת רשיונות, טיפול ברשיון עסק, ייעוץ בנוגע למענה על דרישות רגולטוריות בקשר עם הקמת העסק, הסכמי מייסדים ותקנוני חברה.</div>
             </details>
             
             <details class="mobile-service-details">
-                <summary class="mobile-service-summary">ייעוץ בנושא ציות</summary>
+                <summary class="mobile-service-summary">ייעוץ בנושא ציות (לרבות הגנת הפרטיות)</summary>
                 <div class="mobile-service-content">בדיקה וייעוץ בנוגע לציות העסק לדרישות החוק והרגולטורים (ובפרט הגנת הפרטיות והגנת הצרכן), התנהלות מול הרגולטורים ומול צרכנים ולקוחות בהיבטי ציות - לרבות מענה לביקורות מטעם רגולטורים וייצוג בתביעות ייצוגיות או בפניות מוקדמות לפני תביעה ייצוגית.</div>
             </details>
             
