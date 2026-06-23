@@ -653,9 +653,8 @@
             }
             .main-banner-img {
                 border-radius: 0; /* ביטול עיגול הפינות במובייל למראה נקי מקצה לקצה */
-                height: 260px; /* קביעת גובה קבוע שייראה גדול ומרשים בנייד */
-                object-fit: cover; /* חיתוך שולי הרקע הריקים תוך שמירה על גובה מרשים */
-                object-position: center; /* מיקוד במרכז התמונה כדי שהפנים והלוגו לא ייחתכו */
+                height: auto; /* מאפשר לתמונה לקבל את הגובה הטבעי והמלא שלה ללא חיתוך */
+                object-fit: contain; /* מציג את כל חלקי התמונה במלואם מקצה לקצה */
             }
             .interactive-services-wrapper {
                 display: none;
@@ -747,7 +746,6 @@
     <section id="services">
         <h2 class="section-headline">שירותי המשרד</h2>
         
-        <!-- תצוגת מחשב: תפריט מימין ותוכן מתחלף משמאל -->
         <div class="interactive-services-wrapper">
             <div class="services-nav">
                 <button class="service-nav-btn active" onclick="showService(0)">ליווי שוטף לעסקים</button>
@@ -775,7 +773,7 @@
                 </div>
                 <div class="service-panel" id="service-panel-2">
                     <h3>הקמת עסק</h3>
-                    <p>ייעוץ בנוגע להקמת העסק, רישום חברות, הסדרת רשיונות, טיפול ברשיון עסק, ייעוץ בנוגע למענה על דרישות רגולטוריות בקשר com הקמת העסק, הסכמי מייסדים ותקנוני חברה.</p>
+                    <p>ייעוץ בנוגע להקמת העסק, רישום חברות, הסדרת רשיונות, טיפול ברשיון עסק, ייעוץ בנוגע למענה על דרישות רגולטוריות בקשר עם הקמת העסק, הסכמי מייסדים ותקנוני חברה.</p>
                 </div>
                 <div class="service-panel" id="service-panel-3">
                     <h3>ייעוץ בנושא ציות (לרבות הגנת הפרטיות)</h3>
@@ -816,7 +814,6 @@
             </div>
         </div>
 
-        <!-- תצוגת מובייל: רשימה נפתחת (אקורדיון) המאפשרת לראות הכל בקלות -->
         <div class="mobile-accordion">
             <details class="mobile-service-details">
                 <summary class="mobile-service-summary">ליווי שוטף לעסקים</summary>
@@ -988,7 +985,7 @@
     });
 
     function acceptCookies() {
-        // שמירת האישור בדפנפן המשתמש והעלמת החלונית
+        // שמירת האישור בדפדפן המשתמש והעלמת החלונית
         localStorage.setItem("cookiesAccepted", "true");
         document.getElementById("cookieBanner").classList.remove("show");
     }
