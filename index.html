@@ -647,6 +647,13 @@
         }
         
         @media (max-width: 768px) {
+            .main-banner-container {
+                padding: 0; /* מתיחת הבאנר מקצה לקצה כדי שיקבל מקסימום רוחב וגובה בנייד */
+                margin-top: 0;
+            }
+            .main-banner-img {
+                border-radius: 0; /* ביטול עיגול הפינות במובייל למראה נקי מקצה לקצה */
+            }
             .interactive-services-wrapper {
                 display: none;
             }
@@ -734,7 +741,6 @@
     <section id="services">
         <h2 class="section-headline">שירותי המשרד</h2>
         
-        <!-- תצוגת מחשב: תפריט מימין ותוכן מתחלף משמאל -->
         <div class="interactive-services-wrapper">
             <div class="services-nav">
                 <button class="service-nav-btn active" onclick="showService(0)">ליווי שוטף לעסקים</button>
@@ -803,7 +809,6 @@
             </div>
         </div>
 
-        <!-- תצוגת מובייל: רשימה נפתחת (אקורדיון) המאפשרת לראות הכל בקלות -->
         <div class="mobile-accordion">
             <details class="mobile-service-details">
                 <summary class="mobile-service-summary">ליווי שוטף לעסקים</summary>
@@ -837,7 +842,7 @@
             
             <details class="mobile-service-details">
                 <summary class="mobile-service-summary">הסכמים מסחריים ועסקאות</summary>
-                <div class="mobile-service-content">ליווי הסכמים מסחריים עם גורמים שונים, לרבות לקוחות, עובדים, ספקים, צרכנים, שותפים עסקיים, הסכמי שיתוף פעולה, הסכמי זכיינות, הסכמי הפצה, הסכמי שכירות מסחריים, ליווי במכרזים, ייצוג בעסקאות, לרבות ניהול משא ומתן.</div>
+                <div class="mobile-service-content">ליווי הסכמים מסחריים עם גורמים שונים, לרבות לקוחות, עובדים, ספקים, צרכנים, שותפים עסקיים, הסכמי שיתוף פעולה, הסכמי זכיינות, הסכמי הפצה, הסכמי שכירות מסחריים, ליווי במכרזים, ייצוג בעסקאות, לרבות ניהול משא ונתן.</div>
             </details>
             
             <details class="mobile-service-details">
@@ -923,7 +928,6 @@
     </div>
 </footer>
 
-<!-- חלונית קוקיז קופצת -->
 <div id="cookieBanner" class="cookie-banner">
     <p class="cookie-text">
         אנחנו עשויים להשתמש בקוקיז ולאסוף באמצעותם מידע, לרבות לצורך שיפור חוויית הגלישה באתר, בהתאם למפורט <a href="privacy_policy.pdf" target="_blank">במדיניות הפרטיות של האתר</a>. בהמשך הגלישה באתר, הינך מאשר שקראת את <a href="privacy_policy.pdf" target="_blank">מדיניות הפרטיות</a> והסכמת לאמור לה, לרבות בנוגע לקוקיז.
@@ -982,7 +986,6 @@
     }
 </script>
 
-<!-- Accessibility -->
 <script>
 window.args = {
 	sitekey   : '93f49535bead417f3c1174b9df8a27c8',
