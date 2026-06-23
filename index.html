@@ -576,7 +576,7 @@
             color: var(--brand-main);
         }
 
-        /* --- חלונית קוקיז קוקיז קופצת --- */
+        /* --- חלונית קוקיז קופצת --- */
         .cookie-banner {
             position: fixed;
             bottom: 0; left: 0; right: 0;
@@ -653,7 +653,9 @@
             }
             .main-banner-img {
                 border-radius: 0; /* ביטול עיגול הפינות במובייל למראה נקי מקצה לקצה */
-                height: auto; /* שונה ל-auto כדי שהתמונה המותאמת לנייד תוצג בצורה מושלמת ובמלואה */
+                height: 260px; /* קביעת גובה קבוע שייראה גדול ומרשים בנייד */
+                object-fit: cover; /* חיתוך שולי הרקע הריקים תוך שמירה על גובה מרשים */
+                object-position: center; /* מיקוד במרכז התמונה כדי שהפנים והלוגו לא ייחתכו */
             }
             .interactive-services-wrapper {
                 display: none;
@@ -721,11 +723,11 @@
                 
                 <p>בעשור האחרון עבדתי במחלקות מסחריות במשרדי עורכי דין מהגדולים בישראל, והענקתי ייעוץ ושירותים משפטיים לחברות מהמובילות במשק, חברות גלובליות וכן לעסקים קטנים, עסקים בינוניים ועסקים בהקמה. צברתי ראיה משפטית-מסחרית היקפית ועמוקה ונגעתי בסוגיות משפטיות מורכבות ורבות. נוסף להכשרתי כעורכת דין, אני בוגרת תואר ראשון בכלכלה מאוניברסיטת חיפה, ומאמינה שעו"ד מסחרי מצוין הוא כזה שמבין עסקים.</p>
                 
-                <p>מעבר לנסיוני המשפטי-מסחרי, אני בעלת נסיון מיוחד וממוקד בליווי קמעונאים ועסקי B2C (הפונים לצרכני קצה), במתן מענה בקשר עם הגנת הפרטיות והסדרת נושא הגנת הפרטיות בארגונים (לרבות בנוגע לתיקון מס' 13 לחוק הגנת הפרטיות), הגנת הצרכן, הסכמי צרכנים, ציות, ליווי פלטפורמות דיגיטליות ו- E-Commerce.</p>
+                <p>מעבר לנסיוני המשפטי-מסחרית, אני בעלת נסיון מיוחד וממוקד בליווי קמעונאים ועסקי B2C (הפונים לצרכני קצה), במתן מענה בקשר עם הגנת הפרטיות והסדרת נושא הגנת הפרטיות בארגונים (לרבות בנוגע לתיקון מס' 13 לחוק הגנת הפרטיות), הגנת הצרכן, הסכמי צרכנים, ציות, ליווי פלטפורמות דיגיטליות ו- E-Commerce.</p>
                 
                 <div class="vision-headline">החזון שלי</div>
                 <div class="special-highlight">אני מאמינה במעטפת משפטית חכמה לעסק.</div>
-                <p>כלומר – בראש ובראשונה, מיפוי וזיהוי צרכי העסק, ובפרט זיהוי האינטרסים המסחריים של העסק, ומתן מענה משפטי התומך והמקדם את הצרכים האלו. זאת, תוך מטרה, מצד אחד, לסייע לעסק לצמוח, להתקדם ולהרוויח, ולסייע לעסק לנהל את הסיכונים שלו בצורה מושכלת, ממודעת וחכמה, ומצד שני – לצמצם את הסיכונים באופן שהעסק יהיה פנוי לצמיחה והתקדמות.</p>
+                <p>כלומר – בראש ובראשונה, מיפוי וזיהוי צרכי העסק, ובפרט זיהוי האינטרסים המסחריים של העסק, ומתן מענה משפטי התומך והמקדם את הצרכים האלו. זאת, תוך מטרה, מצד אחד, לסייע לעסק לצמוח, להתקדם ולהרוויח, ולסייע לעסק לנהל את הסיכונים שלו בצורה מושכלת, מודעת וחכמה, ומצד שני – לצמצם את הסיכונים באופן שהעסק יהיה פנוי לצמיחה והתקדמות.</p>
             </div>
             <div class="profile-photo-wrapper">
                 <img src="IMG_0863.png" alt="עורכת דין גל גוט">
@@ -745,6 +747,7 @@
     <section id="services">
         <h2 class="section-headline">שירותי המשרד</h2>
         
+        <!-- תצוגת מחשב: תפריט מימין ותוכן מתחלף משמאל -->
         <div class="interactive-services-wrapper">
             <div class="services-nav">
                 <button class="service-nav-btn active" onclick="showService(0)">ליווי שוטף לעסקים</button>
@@ -753,7 +756,7 @@
                 <button class="service-nav-btn" onclick="showService(3)">ייעוץ בנושא ציות (לרבות הגנת הפרטיות)</button>
                 <button class="service-nav-btn" onclick="showService(4)">סוגיות מול עובדים</button>
                 <button class="service-nav-btn" onclick="showService(5)">פלטפורמות דיגיטליות ואינטרנט</button>
-                <button class="service-nav-btn" onclick="showService(6)">ההסכמים מסחריים ועסקאות</button>
+                <button class="service-nav-btn" onclick="showService(6)">הסכמים מסחריים ועסקאות</button>
                 <button class="service-nav-btn" onclick="showService(7)">דיני חברות וליווי תאגידי שוטף</button>
                 <button class="service-nav-btn" onclick="showService(8)">קניין רוחני ועוולות מסחריות</button>
                 <button class="service-nav-btn" onclick="showService(9)">המשכיות עסקית ומשפחתית</button>
@@ -768,7 +771,7 @@
                 </div>
                 <div class="service-panel" id="service-panel-1">
                     <h3>ליווי משפטי לקמעונאים</h3>
-                    <p>ליווי משפטי מקיף לעסקים קמעונאיים, רשתות וחנויות (פיזיות ומקוונות, לרבות אתרי סחר אלקטרוני). ייעוץ שוטף בסוגיות סחר, חוק הגנת הצרכן, ייצוג בתביעות ייצוגיות ובפניות מקדימות לפני תביעות ייצוגיות, הסכמים מול גורמים שונים לרבות ספקים, יצרנים, מפיצים, מפרסמים (לרבות משפיעני רשת) וזכיינים, ומענה לרגולציה צרכנית.</p>
+                    <p>ליווי משפטי מקיף לעסקים קמעונאיים, רשתות וחנויות (פיזיות ומקוונות, לרבות אתרי סחר אלקטרוני). ייעוץ שוטף בסוגיות סחר, חוק הגנת הצרכן, ייצוג קמעונאיים כנתבעים בתביעות ייצוגיות ובפניות מקדימות לפני תביעות ייצוגיות, הסכמים מול גורמים שונים לרבות ספקים, יצרנים, מפיצים, מפרסמים (לרבות משפיעני רשת) וזכיינים, ומענה לרגולציה (לרבות רגולציה צרכנית).</p>
                 </div>
                 <div class="service-panel" id="service-panel-2">
                     <h3>הקמת עסק</h3>
@@ -776,7 +779,7 @@
                 </div>
                 <div class="service-panel" id="service-panel-3">
                     <h3>ייעוץ בנושא ציות (לרבות הגנת הפרטיות)</h3>
-                    <p>בדיקה וייעוץ בנוגע לציות העסק לדרישות החוק והרגולטורים (ובפרט הגנת הפרטיות והגנת הצרכן), התנהלות מול הרגולטורים ומול צרכנים ולקוחות בהיבטי ציות - לרבות מענה לביקורות מטעם רגולטורים וייצוג בתביעות ייצוגיות או בפניות מוקדמות לפני תביעה ייצוגית.</p>
+                    <p>בדיקה וייעוץ בנוגע לציות העסק לדרישות החוק והרגולטורים (ובפרט הגנת הפרטיות והגנת הצרכן), התנהלות מול הרגולטורים ומול צרכנים ולקוחות בהיבטי ציות - לרבות מענה לביקורות מטעם רגולטורים וייצוג נתבעים בתביעות ייצוגיות או בפניות מוקדמות לפני תביעה ייצוגית.</p>
                 </div>
                 <div class="service-panel" id="service-panel-4">
                     <h3>סוגיות מול עובדים</h3>
@@ -813,6 +816,7 @@
             </div>
         </div>
 
+        <!-- תצוגת מובייל: רשימה נפתחת (אקורדיון) המאפשרת לראות הכל בקלות -->
         <div class="mobile-accordion">
             <details class="mobile-service-details">
                 <summary class="mobile-service-summary">ליווי שוטף לעסקים</summary>
@@ -821,7 +825,7 @@
             
             <details class="mobile-service-details">
                 <summary class="mobile-service-summary">ליווי משפטי לקמעונאים</summary>
-                <div class="mobile-service-content">ליווי משפטי מקיף לעסקים קמעונאיים, רשתות וחנויות (פיזיות ומקוונות, לרבות אתרי סחר אלקטרוני). ייעוץ שוטף בסוגיות סחר, חוק הגנת הצרכן, ייצוג בתביעות ייצוגיות ובפניות מקדימות לפני תביעות ייצוגיות, הסכמים מול גורמים שונים לרבות ספקים, יצרנים, מפיצים, מפרסמים (לרבות משפיעני רשת) וזכיינים, ומענה לרגולציה צרכנית.</div>
+                <div class="mobile-service-content">ליווי משפטי מקיף לעסקים קמעונאיים, רשתות וחנויות (פיזיות ומקוונות, לרבות אתרי סחר אלקטרוני). ייעוץ שוטף בסוגיות סחר, חוק הגנת הצרכן, ייצוג קמעונאיים כנתבעים בתביעות ייצוגיות ובפניות מקדימות לפני תביעות ייצוגיות, הסכמים מול גורמים שונים לרבות ספקים, יצרנים, מפיצים, מפרסמים (לרבות משפיעני רשת) וזכיינים, ומענה לרגולציה (לרבות רגולציה צרכנית).</div>
             </details>
 
             <details class="mobile-service-details">
@@ -831,7 +835,7 @@
             
             <details class="mobile-service-details">
                 <summary class="mobile-service-summary">ייעוץ בנושא ציות (לרבות הגנת הפרטיות)</summary>
-                <div class="mobile-service-content">בדיקה וייעוץ בנוגע לציות העסק לדרישות החוק והרגולטורים (ובפרט הגנת הפרטיות והגנת הצרכן), התנהלות מול הרגולטורים ומול צרכנים ולקוחות בהיבטי ציות - לרבות מענה לביקורות מטעם רגולטורים וייצוג בתביעות ייצוגיות או בפניות מוקדמות לפני תביעה ייצוגית.</div >
+                <div class="mobile-service-content">בדיקה וייעוץ בנוגע לציות העסק לדרישות החוק והרגולטורים (ובפרט הגנת הפרטיות והגנת הצרכן), התנהלות מול הרגולטורים ומול צרכנים ולקוחות בהיבטי ציות - לרבות מענה לביקורות מטעם רגולטורים וייצוג נתבעים בתביעות ייצוגיות או בפניות מוקדמות לפני תביעה ייצוגית.</div>
             </details>
             
             <details class="mobile-service-details">
@@ -992,62 +996,62 @@
 
 <script>
 window.args = {
-	sitekey   : '93f49535bead417f3c1174b9df8a27c8',
-	position  : 'Right',
-	language  : 'HE',
-	container : '',
-	icon : '',
-	access : 'https://vee-crm.com',
-	styles : {
-		primary_color: '#177fab',
-		secondary_color: '#b586ff',
-		background_color: '#f6f6f6',
-		primary_text_color: '#636363',
-		headers_text_color: '#105675',
-		primary_font_size: 14,
-		slider_left_color:  '#b586ff',
-		slider_right_color:  '#177fab',
-		icon_vertical_position: 'top',
-		icon_offset_top: 100,
-		icon_offset_bottom: 0,
-		highlight_focus_color: '#177fab',
-		toggler_icon_color: '#ffffff',
-	},
-	links : {
-		acc_policy: 'Vee-accessibility-policy-template-he_IL.pdf',
-		additional_link: 'https://vee.co.il/pricing/'
-	},
-	options : {
-		open: false,
-		aaa: false,
-		hide_tablet: false,
-		hide_mobile: false,
-		button_size_tablet: 44,
-		button_size_mobile: 34,
-		position_tablet: 'Right',
-		position_mobile: 'Right',
-		icon_vertical_position_tablet: 'top',
-		icon_vertical_position_mobile: 'top',
-		icon_offset_top_tablet: 100,
-		icon_offset_bottom_tablet: 0,
-		icon_offset_top_mobile: 100,
-		icon_offset_bottom_mobile: 0,
-		keyboard_shortcut: true,
-		disable_headings: false,
-		hide_purchase_link: false,
-		display_checkmark_icon: false,
-		active_toggler_color: '#118f38'
-	},
-	exclude : []
+    sitekey   : '93f49535bead417f3c1174b9df8a27c8',
+    position  : 'Right',
+    language  : 'HE',
+    container : '',
+    icon : '',
+    access : 'https://vee-crm.com',
+    styles : {
+        primary_color: '#177fab',
+        secondary_color: '#b586ff',
+        background_color: '#f6f6f6',
+        primary_text_color: '#636363',
+        headers_text_color: '#105675',
+        primary_font_size: 14,
+        slider_left_color:  '#b586ff',
+        slider_right_color:  '#177fab',
+        icon_vertical_position: 'top',
+        icon_offset_top: 100,
+        icon_offset_bottom: 0,
+        highlight_focus_color: '#177fab',
+        toggler_icon_color: '#ffffff',
+    },
+    links : {
+        acc_policy: 'Vee-accessibility-policy-template-he_IL.pdf',
+        additional_link: 'https://vee.co.il/pricing/'
+    },
+    options : {
+        open: false,
+        aaa: false,
+        hide_tablet: false,
+        hide_mobile: false,
+        button_size_tablet: 44,
+        button_size_mobile: 34,
+        position_tablet: 'Right',
+        position_mobile: 'Right',
+        icon_vertical_position_tablet: 'top',
+        icon_vertical_position_mobile: 'top',
+        icon_offset_top_tablet: 100,
+        icon_offset_bottom_tablet: 0,
+        icon_offset_top_mobile: 100,
+        icon_offset_bottom_mobile: 0,
+        keyboard_shortcut: true,
+        disable_headings: false,
+        hide_purchase_link: false,
+        display_checkmark_icon: false,
+        active_toggler_color: '#118f38'
+    },
+    exclude : []
 };
 
 (function(doc, head, body){
-	var embed = doc.createElement('script');
-	embed.src = window.args['access'] + '/js/';
-	embed.defer = true;
-	embed.crossOrigin = 'anonymous';
-	embed.setAttribute('data-cfasync', true );
-	body? body.appendChild(embed) : head.appendChild(embed);
+    var embed = doc.createElement('script');
+    embed.src = window.args['access'] + '/js/';
+    embed.defer = true;
+    embed.crossOrigin = 'anonymous';
+    embed.setAttribute('data-cfasync', true );
+    body? body.appendChild(embed) : head.appendChild(embed);
 })(document, document.head, document.body);
 </script>
 </body>
