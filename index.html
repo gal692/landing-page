@@ -477,6 +477,21 @@
             margin-top: 25px;
         }
 
+        /* שורה ממורכזת עבור התמונות התחתונות */
+        .centered-posts-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .centered-posts-row .post-card-link {
+            width: 100%;
+            max-width: 340px;
+            flex: 1 1 260px;
+        }
+
         .post-card-link {
             text-decoration: none;
             display: block;
@@ -717,11 +732,11 @@
         <h2 class="section-headline">אודות</h2>
         <div class="about-layout-grid">
             <div class="about-text-content">
-                <div class="sub-headline-lawyer">נעים מאוד – עורכת דין גל גוט.</div>
+                <div class="sub-headline-lawyer">נעים מאוד – עורכת דין גל גוט. משרדי מעניק מעטפת משפטית חכמה לעסקים ומענה בהיבטי המשפט המסחרי.</div>
                 
                 <p>בעשור האחרון עבדתי במחלקות מסחריות במשרדי עורכי דין מהגדולים בישראל, והענקתי ייעוץ ושירותים משפטיים לחברות מהמובילות במשק, חברות גלובליות וכן לעסקים קטנים, עסקים בינוניים ועסקים בהקמה. צברתי ראיה משפטית-מסחרית היקפית ועמוקה ונגעתי בסוגיות משפטיות מורכבות ורבות. נוסף להכשרתי כעורכת דין, אני בוגרת תואר ראשון בכלכלה מאוניברסיטת חיפה, ומאמינה שעו"ד מסחרי מצוין הוא כזה שמבין עסקים.</p>
                 
-                <p>מעבר לנסיוני המשפטי-מסחרית, אני בעלת נסיון מיוחד וממוקד בליווי קמעונאים ועסקי B2C (הפונים לצרכני קצה), נסיון במתן מענה בקשר עם הגנת הפרטיות והסדרת נושא הגנת הפרטיות בארגונים (לרבות בנוגע לתיקון מס' 13 לחוק הגנת הפרטיות), וכן ניסיון בהגנת הצרכן, הסכמי צרכנים, ציות, ליווי פלטפורמות דיגיטליות ו- E-Commerce.</p>
+                <p><strong>מעבר לנסיוני המשפטי-מסחרי, אני בעלת נסיון ממוקד בליווי קמעונאים, עסקי B2C (הפונים לצרכני קצה), פלטפורמות דיגיטליות ואתרי סחר מקוון (E-Commerce), וכן בהסדרת היבטי הגנת הפרטיות בארגונים (לרבות בנוגע לתיקון מס' 13 לחוק הגנת הפרטיות), במתן מענה בהיבטי הגנת הצרכן, בהסכמי צרכנים וציות.</strong></p>
                 
                 <div class="vision-headline">החזון שלי</div>
                 <div class="special-highlight">אני מאמינה במעטפת משפטית חכמה לעסק.</div>
@@ -888,6 +903,8 @@
             </a>
         </div>
 
+        <h3 class="section-headline" style="font-size:1.4rem; margin-top: 35px; margin-bottom:15px; padding-bottom:5px;">תוכן ומאמרים</h3>
+        
         <div class="featured-posts-grid">
             <a href="https://www.facebook.com/photo/?fbid=122127206379199370&set=a.122123498721199370" target="_blank" class="post-card-link">
                 <div class="post-img-wrapper">
@@ -903,11 +920,27 @@
                 <div class="post-card-footer">צפייה בפוסט בפייסבוק ↗</div>
             </a>
 
-            <a href="https://www.instagram.com/p/DZajpA3oonI/" target="_blank" class="post-card-link">
+            <a href="https://www.facebook.com/share/p/1HUCxbrPFg/" target="_blank" class="post-card-link">
                 <div class="post-img-wrapper">
                     <img src="55.png" alt="פוסט נבחר">
                 </div>
-                <div class="post-card-footer">צפייה בפוסט באינסטגרם ↗</div>
+                <div class="post-card-footer">צפייה בפוסט בפייסבוק ↗</div>
+            </a>
+        </div>
+
+        <div class="centered-posts-row">
+            <a href="https://www.linkedin.com/posts/gal-gott-283420167_privacy-dataprotection-ackaciacwadgabrackadaadeacoacpacladg-share-7472006345806884864-Wkyo/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACfAQ4MBgn814_GU8WTCl5uIdOeeijbPn3k" target="_blank" class="post-card-link">
+                <div class="post-img-wrapper">
+                    <img src="SHADOW-AI.PNG" alt="פוסט בלינקדאין">
+                </div>
+                <div class="post-card-footer">צפייה בפוסט בלינקדאין ↗</div>
+            </a>
+
+            <a href="https://www.linkedin.com/posts/gal-gott-283420167_ackaciacwadgackadcadeacracv-acuadfadaacoacuacxacnadeacp-share-7476265462293598208-43HI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACfAQ4MBgn814_GU8WTCl5uIdOeeijbPn3k" target="_blank" class="post-card-link">
+                <div class="post-img-wrapper">
+                    <img src="CONSUMER.PNG" alt="פוסט בלינקדאין">
+                </div>
+                <div class="post-card-footer">צפייה בפוסט בלינקדאין ↗</div>
             </a>
         </div>
     </section>
